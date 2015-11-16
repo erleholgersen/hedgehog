@@ -13,3 +13,15 @@ pathplot <- function(S, T2 = 1) {
   }
 }
 
+confidence_interval <- function(x, alpha=0.05) {
+  n = length(x)
+  sd = sqrt(var(x)/n)
+  z = qnorm(1 - alpha/2)
+  return(c(mean(x) - z*sd, mean(x) + z*sd))
+}
+
+geometric_mean <- function(numbers) {
+  n = length(numbers)
+  return(prod(numbers)^(1/n))
+}
+
