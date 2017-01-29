@@ -4,12 +4,14 @@
 \alias{km.plot}
 \title{Plot Kaplan-Meier curves.}
 \usage{
-km.plot(km.formula, dataset)
+km.plot(km.formula, dataset, show.risk.table = FALSE)
 }
 \arguments{
 \item{km.formula}{Formula to be plotted.}
 
 \item{dataset}{Data.}
+
+\item{show.risk.table}{Boolean.}
 }
 \description{
 Plot Kaplan-Meier curves.
