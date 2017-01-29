@@ -4,14 +4,12 @@
 \alias{censoring.km.estimate}
 \title{Get Kaplan-Meier estimate of censoring distribution at time t.}
 \usage{
-censoring.km.estimate(t, time, status, censoring.status = 0)
+censoring.km.estimate(t, survival.object, censoring.status = 0)
 }
 \arguments{
 \item{t}{time}
 
-\item{time}{vector of event times}
-
-\item{status}{vector of event status}
+\item{survival.object}{survival object containing times and censoring statuses.}
 
 \item{censoring.status}{status corresponding to censored observations, defaults to zero.}
 }

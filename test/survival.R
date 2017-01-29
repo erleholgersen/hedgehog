@@ -1,6 +1,9 @@
 ### survival.R ####################################################################################
 # Test survival functions - both plotting and non-plotting ones.
 
+
+survival.object <- Surv(ovarian$futime, ovarian$fustat);
+
 ### KM plots ######################################################################################
 
 km.plot(
@@ -12,6 +15,12 @@ km.plot(
 
 censoring.estimates <- censoring.km.estimate(
   t = seq(100, 1500, by = 100), 
-  time = ovarian$futime, 
-  status = ovarian$fustat
+  survival.object = survival.object
+  );
+
+### FINE-GRAY MODEL WEIGHTS #######################################################################
+
+weights <- fg.model.ipcw(
+  700, 
+  survival.object
   );
