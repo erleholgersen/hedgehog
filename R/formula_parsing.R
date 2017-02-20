@@ -28,8 +28,9 @@ get.wrapped.term <- function(formula, wrapping) {
       )
     );
   
-  wrapped.variables <- variables[grepl()]
-  return(variables[grepl])
+  wrapped.variables <- variables[grepl()];
+  
+  return(wrapped.variables);
   
     
 }
