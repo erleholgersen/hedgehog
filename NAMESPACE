@@ -3,5 +3,6 @@
 export(censoring.km.estimate)
 export(conf.int.string)
 export(fg.model.ipcw)
+export(head.cat)
 export(km.plot)
 export(truncate.survival)

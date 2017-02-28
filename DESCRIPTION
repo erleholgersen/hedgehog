@@ -1,12 +1,12 @@
 Package: eRle
 Type: Package
-Title: What the Package Does (Title Case)
+Title: R functions for personal use.
 Version: 0.1
-Date: 2015-11-15
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Date: 2017-02-28
+Author: Erle Holgersen <erle.holgersen@gmail.com>
+Maintainer: Erle Holgersen <erle.holgersen@gmail.com>
+Description: Various R functions developed for personal convenience.
 Depends: survival
 License: What license is it under?
 LazyData: TRUE
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
