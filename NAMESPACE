@@ -2,7 +2,9 @@
 
 export(censoring.km.estimate)
 export(conf.int.string)
+export(datestamp.filename)
 export(fg.model.ipcw)
 export(head.cat)
 export(km.plot)
+export(str.cat)
 export(truncate.survival)
