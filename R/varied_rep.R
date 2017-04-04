@@ -24,8 +24,20 @@ varied.rep <- function(x, each) {
         simplify = FALSE
         );
     
+    # for reasons that are above me, mapply will occasionally return a matrix
+    # in that case, convert to list manually
+    if ('matrix' == class(repeat.list)) {
+        repeat.list <- split(
+            repeat.list, 
+            rep(
+                1:ncol(repeat.list), 
+                each = nrow(repeat.list)
+                )
+            );
+    }
+
     # coerce to vector
-    repeat.vector <- unlist(repeat.list);
+    repeat.vector <- unlist(as.list(repeat.list));
     names(repeat.vector) <- NULL;
     
     return(repeat.vector);
