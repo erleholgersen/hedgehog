@@ -9,4 +9,3 @@ get.wrapped.term(formula, wrapping)
 \description{
 Extract wrapped term from formula
 }
-

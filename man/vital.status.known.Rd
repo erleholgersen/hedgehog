@@ -19,4 +19,3 @@ known.vitals vector of same length as survival.object, indicating whether surviv
 \description{
 Helper function to get indicator of whether the vital status of the patient is known at time t.
 }
-

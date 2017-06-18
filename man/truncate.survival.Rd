@@ -19,4 +19,3 @@ truncated.survival.object  survival object of same length input, containing surv
 \description{
 Truncate survival times to time t.
 }
-

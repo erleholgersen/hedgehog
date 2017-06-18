@@ -19,4 +19,3 @@ Calculate inverse probability of censoring weighting for Fine and Gray model.
 \references{
 Jason P. Fine and Robert J. Gray (1999). A Proportional Hazards Model for the Subdistribution of a Competing Risk. Journal of the American Statistical Association.
 }
-
