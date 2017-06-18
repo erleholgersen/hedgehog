@@ -2,10 +2,30 @@
 % Please edit documentation in R/head_cat.R
 \name{head.cat}
 \alias{head.cat}
+
 \title{Print head of an arbitrary number of obejcts.}
 \usage{
 \method{head}{cat}(...)
 }
 \description{
 Print head of an arbitrary number of obejcts.
+=======
+\title{Print head of an arbitrary number of objects.}
+\usage{
+\method{head}{cat}(...)
+}
+\arguments{
+\item{...}{objects to print head of}
+}
+\value{
+None
+}
+\description{
+Print head of an arbitrary number of objects.
+}
+\examples{
+a <- 1:100;
+b <- 50:100;
+head.cat(a, b, letters);
+
 }
