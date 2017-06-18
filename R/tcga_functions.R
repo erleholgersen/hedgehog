@@ -1,33 +1,52 @@
+#' Convert vector of -1, 0, 1 CNA calls to vector of colours
+#' 
+#' @param cna.callss vector of -1, 0, 1 coded CNAs
+#' @param loss.col colour of losses, defaults to 'blue'
+#' @param gain.col colour of gains, defaults to 'red'
+#' @param neutral.col colour of neutral regions, defaults to 'white'
+#' 
+#' @return vector of colours
+#' 
+#' @export colour.code.cnas
+colour.code.cnas <- function(cna.callss, loss.col = 'blue', gain.col = 'red', neutral.col = 'white') {
+   
+    colour.dictionary <- c(
+        '-1' = loss.col,
+        '0' = neutral.col,
+        '1' = gain.col
+        );
+    
+    colours <- colour.dictionary[as.character(cna.callss)];
+    
+    return(colours);
+}
+
 #' Call copy numbers from TCGA level 3 data
 #'
 #' @param cnv.data  Data frame of TCGA Level 3 data
 #' @param colour.code   Logical indicating if colours should be returned instead of -1, 0, 1 coding
 #'
-#'@export call.tcga.cnas
+#' @return cna.callss vector of CNA calls
+#' 
+#' @export call.tcga.cnas
 call.tcga.cnas <- function(cnv.data, colour.code = FALSE) {
   
     # get absolute number of copies
-    copy.number <- round(2*(2^cnv.data$Segment_Mean));
+    copy.numbers <- round(2*(2^cnv.data$Segment_Mean));
     
     # convert to -1, 0, 1 coding
-    cna.call <- rep(0, length(copy.number));
-    cna.call[copy.number < 2] <- -1;
-    cna.call[copy.number > 2] <- 1;
+    cna.calls <- rep(0, length(copy.numbers));
+    cna.calls[copy.numbers < 2] <- -1;
+    cna.calls[copy.numbers > 2] <- 1;
     
     # fix Y-chromosome
-    cna.call['Y' == cnv.data$Chromosome] <- cna.call['Y' == cnv.data$Chromosome] + 1;
-    cna.call['Y' == cnv.data$Chromosome & 0 == copy.number] <- -1;
+    cna.calls['Y' == cnv.data$Chromosome] <- cna.calls['Y' == cnv.data$Chromosome] + 1;
+    cna.calls['Y' == cnv.data$Chromosome & 0 == copy.numbers] <- -1;
     
     if(colour.code) {
-        colour.dictionary <- c(
-            '-1' = 'blue',
-            '0' = 'white',
-            '1' = 'red'
-        );
-        
-        cna.call <- colour.dictionary[as.character(cna.call)];
+        cna.calls <- colour.code.cnas(cna.calls);
     }
     
-    return(cna.call);
+    return(cna.calls);
     
 }

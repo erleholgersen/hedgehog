@@ -2,6 +2,7 @@
 
 export(call.tcga.cnas)
 export(censoring.km.estimate)
+export(colour.code.cnas)
 export(conf.int.string)
 export(datestamp.filename)
 export(fg.model.ipcw)

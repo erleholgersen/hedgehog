@@ -11,6 +11,9 @@ call.tcga.cnas(cnv.data, colour.code = FALSE)
 
 \item{colour.code}{Logical indicating if colours should be returned instead of -1, 0, 1 coding}
 }
+\value{
+cna.callss vector of CNA calls
+}
 \description{
 Call copy numbers from TCGA level 3 data
 }
