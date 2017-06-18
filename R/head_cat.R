@@ -24,7 +24,10 @@ head.cat <- function(...) {
     
     print( head(arguments[[variable.name]]) );
     
-=======
+  }
+  
+}
+  
 #' Print head of an arbitrary number of objects.
 #' 
 #' @param ... objects to print head of
@@ -58,5 +61,8 @@ head.cat <- function(...) {
     # extra line space
     cat('\n');
 
-  }
+    }
+
 }
+
+

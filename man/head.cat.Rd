@@ -2,16 +2,11 @@
 % Please edit documentation in R/head_cat.R
 \name{head.cat}
 \alias{head.cat}
-
+\alias{head.cat}
 \title{Print head of an arbitrary number of obejcts.}
 \usage{
 \method{head}{cat}(...)
-}
-\description{
-Print head of an arbitrary number of obejcts.
-=======
-\title{Print head of an arbitrary number of objects.}
-\usage{
+
 \method{head}{cat}(...)
 }
 \arguments{
@@ -21,6 +16,8 @@ Print head of an arbitrary number of obejcts.
 None
 }
 \description{
+Print head of an arbitrary number of obejcts.
+
 Print head of an arbitrary number of objects.
 }
 \examples{
