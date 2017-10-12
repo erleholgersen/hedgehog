@@ -4,7 +4,7 @@
 #' @param confidence.interval vector of length two giving confidence interval.
 #' @param n.decimals number of decimal places to include in confidence interval.
 #' 
-#' @return formatted.conf.int confidence interval formatted as a string.
+#' @return confidence interval formatted as a string.
 #' 
 #' @export
 conf.int.string <- function(confidence.interval, n.decimals = 3) {

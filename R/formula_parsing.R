@@ -31,6 +31,5 @@ get.wrapped.term <- function(formula, wrapping) {
   wrapped.variables <- variables[grepl()];
   
   return(wrapped.variables);
-  
-    
+
 }

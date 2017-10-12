@@ -3,7 +3,7 @@
 #' @param file.name core part of file name to be date stamped
 #' @param extension extension
 #'
-#' @return stamped.file.name generated file name
+#' @return generated file name
 #'
 #' @export datestamp.filename
 datestamp.filename <- function(file.name, extension, timestamp = FALSE) {

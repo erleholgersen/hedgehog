@@ -4,17 +4,17 @@
 \alias{colour.code.cnas}
 \title{Convert vector of -1, 0, 1 CNA calls to vector of colours}
 \usage{
-colour.code.cnas(cna.callss, loss.col = "blue", gain.col = "red",
+colour.code.cnas(cna.calls, loss.col = "blue", gain.col = "red",
   neutral.col = "white")
 }
 \arguments{
-\item{cna.callss}{vector of -1, 0, 1 coded CNAs}
-
 \item{loss.col}{colour of losses, defaults to 'blue'}
 
 \item{gain.col}{colour of gains, defaults to 'red'}
 
 \item{neutral.col}{colour of neutral regions, defaults to 'white'}
+
+\item{cna.callss}{vector of -1, 0, 1 coded CNAs}
 }
 \value{
 vector of colours

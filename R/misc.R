@@ -39,7 +39,7 @@ factor.to.numeric <- function(x) {
 #' @param x First vector
 #' @param y Second vector
 #'
-#' @return interleaved Vector of interleaved values. 
+#' @return Vector of interleaved values. 
 #' 
 #' @export interleave
 interleave <- function(x, y) {

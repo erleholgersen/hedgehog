@@ -12,7 +12,7 @@ conf.int.string(confidence.interval, n.decimals = 3)
 \item{n.decimals}{number of decimal places to include in confidence interval.}
 }
 \value{
-formatted.conf.int confidence interval formatted as a string.
+confidence interval formatted as a string.
 }
 \description{
 Make confidence interval string.

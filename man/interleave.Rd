@@ -12,7 +12,7 @@ interleave(x, y)
 \item{y}{Second vector}
 }
 \value{
-interleaved Vector of interleaved values.
+Vector of interleaved values.
 }
 \description{
 Interleave two vectors. Any overhang due to mismatching lengths is added onto the end.

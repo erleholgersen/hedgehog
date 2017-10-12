@@ -12,7 +12,7 @@ datestamp.filename(file.name, extension, timestamp = FALSE)
 \item{extension}{extension}
 }
 \value{
-stamped.file.name generated file name
+generated file name
 }
 \description{
 Generate date-stamped filename
