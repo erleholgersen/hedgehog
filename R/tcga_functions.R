@@ -1,6 +1,9 @@
-#' Convert vector of -1, 0, 1 CNA calls to vector of colours
+#' Colour code CNAs
 #' 
-#' @param cna.callss vector of -1, 0, 1 coded CNAs
+#' @description 
+#'  Convert vector of -1, 0, 1 CNA calls to vector of colours
+#' 
+#' @param cna.calls vector of -1, 0, 1 coded CNAs
 #' @param loss.col colour of losses, defaults to 'blue'
 #' @param gain.col colour of gains, defaults to 'red'
 #' @param neutral.col colour of neutral regions, defaults to 'white'
@@ -26,7 +29,7 @@ colour.code.cnas <- function(cna.calls, loss.col = 'blue', gain.col = 'red', neu
 #' @param cnv.data  Data frame of TCGA Level 3 data
 #' @param colour.code   Logical indicating if colours should be returned instead of -1, 0, 1 coding
 #'
-#' @return cna.callss vector of CNA calls
+#' @return vector of CNA calls
 #' 
 #' @export call.tcga.cnas
 call.tcga.cnas <- function(cnv.data, colour.code = FALSE) {

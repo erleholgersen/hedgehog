@@ -1,7 +1,7 @@
 #' rep function extended to support variable number of repeats for each element.
 #' 
 #' @param x elements to be repeated.
-#' @param each  vector giving number of times each element should be repeated.
+#' @param each vector giving number of times each element should be repeated.
 #' 
 #' @return Vector of repeated elements.
 #' 

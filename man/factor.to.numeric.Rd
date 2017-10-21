@@ -15,3 +15,6 @@ numeric.values Vector of numeric values corresponding to x
 \description{
 Convert a factor to the numeric values in factor levels
 }
+\author{
+Erle Holgersen <Erle.Holgersen@gmail.com>
+}

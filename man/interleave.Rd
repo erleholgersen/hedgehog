@@ -17,3 +17,6 @@ Vector of interleaved values.
 \description{
 Interleave two vectors. Any overhang due to mismatching lengths is added onto the end.
 }
+\author{
+Erle Holgersen <Erle.Holgersen@gmail.com>
+}

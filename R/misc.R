@@ -1,10 +1,15 @@
 # Helper functions with no clear category
 
-#' Source all R scripts in a directory
+#' Source directory
+#' 
+#' @description 
+#'  Source all R scripts in a directory.
 #'
 #' @param directory Path to directory to be sourced
-#'
-#' @value None
+#' 
+#' @return None
+#' 
+#' @author Erle Holgersen <Erle.Holgersen@gmail.com>
 #' 
 #' @export source.directory
 source.directory <- function(directory) {
@@ -15,7 +20,6 @@ source.directory <- function(directory) {
         );
     
     invisible( sapply(r.script.paths, FUN = source) );
-    
 }
 
 
@@ -25,6 +29,8 @@ source.directory <- function(directory) {
 #' @param x Factor to be converted
 #' 
 #' @return numeric.values Vector of numeric values corresponding to x
+#' 
+#' @author Erle Holgersen <Erle.Holgersen@gmail.com>
 #' 
 #' @export factor.to.numeric
 factor.to.numeric <- function(x) {
@@ -41,6 +47,8 @@ factor.to.numeric <- function(x) {
 #'
 #' @return Vector of interleaved values. 
 #' 
+#' @author Erle Holgersen <Erle.Holgersen@gmail.com>
+#'
 #' @export interleave
 interleave <- function(x, y) {
   min_length <- min(length(x), length(y));

@@ -2,13 +2,19 @@
 % Please edit documentation in R/misc.R
 \name{source.directory}
 \alias{source.directory}
-\title{Source all R scripts in a directory}
+\title{Source directory}
 \usage{
 source.directory(directory)
 }
 \arguments{
 \item{directory}{Path to directory to be sourced}
 }
+\value{
+None
+}
 \description{
-Source all R scripts in a directory
+Source all R scripts in a directory.
+}
+\author{
+Erle Holgersen <Erle.Holgersen@gmail.com>
 }
