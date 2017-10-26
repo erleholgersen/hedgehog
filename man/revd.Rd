@@ -19,4 +19,3 @@ vector of simulated observations
 \description{
 Generate obervations from extreme value distribution
 }
-

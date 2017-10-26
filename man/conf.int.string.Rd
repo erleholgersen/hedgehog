@@ -17,4 +17,3 @@ formatted.conf.int confidence interval formatted as a string.
 \description{
 Make confidence interval string.
 }
-

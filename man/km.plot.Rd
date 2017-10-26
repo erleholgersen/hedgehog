@@ -16,4 +16,3 @@ km.plot(km.formula, dataset, show.risk.table = FALSE)
 \description{
 Plot Kaplan-Meier curves.
 }
-

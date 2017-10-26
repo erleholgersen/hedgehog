@@ -19,4 +19,3 @@ km.estimate
 \description{
 Get Kaplan-Meier estimate of censoring distribution at time t.
 }
-
