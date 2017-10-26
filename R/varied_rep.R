@@ -1,9 +1,9 @@
 #' rep function extended to support variable number of repeats for each element.
 #' 
 #' @param x elements to be repeated.
-#' @param each  vector giving number of times each element should be repeated.
+#' @param each vector giving number of times each element should be repeated.
 #' 
-#' @return repeat.vector vector created by repeating each element.
+#' @return Vector of repeated elements.
 #' 
 #' @export varied.rep
 varied.rep <- function(x, each) {

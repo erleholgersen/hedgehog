@@ -30,5 +30,9 @@ head.cat <- function(...) {
     
     # extra line space
     cat('\n');
-  }
+
+    }
+
 }
+
+

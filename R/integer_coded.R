@@ -4,7 +4,7 @@
 #' 
 #' @param x vector to be converted
 #' 
-#' @return recoded.vector integer coded vector
+#' @return integer-coded vector
 #'
 #' @export integer.coded
 integer.coded <- function(x) {

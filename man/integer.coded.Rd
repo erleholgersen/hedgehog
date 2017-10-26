@@ -10,7 +10,7 @@ integer.coded(x)
 \item{x}{vector to be converted}
 }
 \value{
-recoded.vector integer coded vector
+integer-coded vector
 }
 \description{
 Convert a vector to a vector of integers, where each integer corresponds to a unique value in the original vector. Shorthand for as.numeric(factor(x, levels = unique(x)))

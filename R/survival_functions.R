@@ -5,6 +5,8 @@
 #' @param scale scale parameter
 #'
 #' @return vector of simulated observations
+#' 
+#' @export
 revd <- function(n, location = 0, scale = 1) {
 
   invF <- function(w) {

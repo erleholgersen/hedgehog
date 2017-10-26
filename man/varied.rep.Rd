@@ -12,7 +12,7 @@ varied.rep(x, each)
 \item{each}{vector giving number of times each element should be repeated.}
 }
 \value{
-repeat.vector vector created by repeating each element.
+Vector of repeated elements.
 }
 \description{
 rep function extended to support variable number of repeats for each element.
