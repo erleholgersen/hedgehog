@@ -1,4 +1,4 @@
 library(testthat);
-library(eRle);
+library(hedgehog);
 
-test_check('eRle');
+test_check('hedgehog');

@@ -1,4 +1,4 @@
-Package: eRle
+Package: hedgehog
 Type: Package
 Title: R functions for personal use.
 Version: 0.1
@@ -10,4 +10,4 @@ Depends: survival
 License: What license is it under?
 LazyData: TRUE
 RoxygenNote: 6.0.1
-Imports: testthat
+Suggests: testthat
