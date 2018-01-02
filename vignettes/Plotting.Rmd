@@ -1,0 +1,31 @@
+---
+title: "Plotting"
+author: "Erle Holgersen"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Kaplan-Meier Plots
+```{r}
+library(hedgehog);
+library(survival);
+
+# using example from survival package
+km.plot(
+    Surv(futime, death) ~ sex, 
+    mgus
+    );
+```
+
+```{r}
+km.plot(
+    Surv(futime, death) ~ sex, 
+    mgus,
+    show.risk.table = TRUE
+    );
+```
+
