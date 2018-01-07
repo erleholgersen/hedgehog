@@ -9,7 +9,12 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+For visualization, I focus on writing functions for plots I use frequently and that require many lines of base R. At present, the package support two plots, `km.plot` and `stripboxplot`.
+
 # Kaplan-Meier Plots
+
+Kaplan-Meier plots are used for visualizing censored data. They are most commonly used in medical studies to visualize differences in patient survival. 
+
 ```{r}
 library(hedgehog);
 library(survival);
@@ -29,3 +34,15 @@ km.plot(
     );
 ```
 
+# Box plots
+
+Standard box plots hide the sample size in each group. One way of getting around this is to add a background stripplot that shows each point in the dataset. 
+
+```{r}
+test.data <- data.frame(
+    x = sample(letters[1:3], 100, replace = TRUE),
+    y = rnorm(100)
+    );
+
+stripboxplot(y ~ x, test.data);
+```
