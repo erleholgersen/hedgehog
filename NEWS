@@ -1,3 +1,8 @@
+hedgehog v0.1.2                         2018-01-16
+==================================================
+- KM plot colours
+- removed outliers in stripboxplot
+
 hedgehog v0.1.1                         2018-01-15
 ==================================================
 - added get.colour.palette function

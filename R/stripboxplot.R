@@ -35,7 +35,8 @@ stripboxplot <- function(
         plot.formula,
         dataset,
         add = TRUE,
-        col = 'transparent'
+        col = 'transparent',
+        outline = FALSE
         );
     
 }

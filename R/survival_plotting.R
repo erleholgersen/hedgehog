@@ -3,10 +3,21 @@
 #' @param km.formula Formula to be plotted
 #' @param dataset Dataframe
 #' @param show.risk.table Boolean indicating whether to show at risk data
-#' @param lty Line type
+#' @param col Line colour
+#' @param ... Other parameters to be passed to \code{plot.survfit}
+#' 
+#' @return None
+#' 
+#' @author Erle Holgersen <Erle.Holgersen@icr.ac.uk>
 #' 
 #' @export
-km.plot <- function(km.formula, dataset, show.risk.table = FALSE, lty = NULL) {
+km.plot <- function(
+    km.formula, 
+    dataset, 
+    show.risk.table = FALSE, 
+    col = NULL,
+    ...
+    ) {
   
   # TO DO: check input
   
@@ -39,14 +50,15 @@ km.plot <- function(km.formula, dataset, show.risk.table = FALSE, lty = NULL) {
       mai = mai
       );
   
-  if( is.null(lty) ) {
-      lty <- 1:length(strata.labels);
+  if( is.null(col) ) {
+      col <- get.colour.palette( length(strata.labels) );
   }
   
   plot(
       km.fit, 
-      lty = lty,
-      mark.time = TRUE
+      col = col,
+      mark.time = TRUE,
+      ...
       );
   
   if(show.risk.table) {
@@ -75,7 +87,7 @@ km.plot <- function(km.formula, dataset, show.risk.table = FALSE, lty = NULL) {
         mtext(
             strata,
             side = 1,
-            at = -0.5*risk.times[2],
+            at = -0.2*risk.times[2],
             adj = 1,
             line = 2 + i, 
             font = 2,
@@ -88,12 +100,19 @@ km.plot <- function(km.formula, dataset, show.risk.table = FALSE, lty = NULL) {
             line = 2 + i
         );
         
-    }
-    # show risk table
-
+        } # end strata loop
     
-  }
+  } # end if statement
   
-
+  if( length(strata.labels) > 1 ) {
+      
+      legend(
+          'bottomleft',
+          legend = strata.labels,
+          col = col,
+          lty = 1,
+          bty = 'n'
+      );
+  }
   
 }
