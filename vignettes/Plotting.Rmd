@@ -18,7 +18,9 @@ For visualization, I focus on writing functions for plots I use frequently and t
 
 # Kaplan-Meier Plots – `km.plot`
 
-Kaplan-Meier plots are used for visualizing censored data. They are most commonly used in medical studies for showing how survival differs between treatment groups.
+Kaplan-Meier plots are used for visualizing censored data. They are most commonly used in medical studies for showing how survival differs between treatment groups. Building a KM plot in R is straightforward, but requires several function calls. First you call the `survfit` function from the [survival](https://cran.r-project.org/web/packages/survival/index.html) package, and then call plot on the resulting object.
+
+To speed up this process, I wrote my own wrapper function `km.plot`.
 
 ```{r}
 library(hedgehog);
@@ -52,7 +54,7 @@ test.data <- data.frame(
 stripboxplot(y ~ x, test.data);
 ```
 
-By default, all background points are grey. We can change this by using the `points.col` argument. It is passed straight to `stripchart`, and thus follows the stripchart convention of assigning colours by grouping variable. 
+By default, all background points are grey. We can change this by using the `points.col` argument. It is passed directly to `stripchart`, and thus follows the stripchart convention of assigning colours by grouping variable. 
 
 ```{r}
 stripboxplot(
