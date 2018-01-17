@@ -4,6 +4,7 @@
 #' 
 #' @return None
 #' 
+#' @export str.cat
 str.cat <- function(...) {
   
   # get all arguments

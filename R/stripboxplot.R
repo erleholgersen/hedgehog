@@ -7,7 +7,8 @@
 #' @param dataset Dataset
 #' @param xlab x-axis label
 #' @param ylab y-axis label
-#' @param ... additional parameters to be passed to \code{stripchart}
+#' @param points.col Colour of background points
+#' @param ... Additional parameters to be passed to \code{stripchart}
 #' 
 #' @export stripboxplot
 stripboxplot <- function(
@@ -15,6 +16,7 @@ stripboxplot <- function(
     dataset = NULL,
     xlab = NULL,
     ylab = NULL,
+    points.col = 'lightgrey',
     ...
     ) {
     
@@ -24,7 +26,7 @@ stripboxplot <- function(
         vertical = TRUE,
         method = 'jitter',
         jitter = 0.35,
-        col = 'lightgrey',
+        col = points.col,
         pch = 19,
         xlab = xlab,
         ylab = ylab,
