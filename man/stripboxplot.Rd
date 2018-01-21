@@ -4,7 +4,8 @@
 \alias{stripboxplot}
 \title{stripboxplot}
 \usage{
-stripboxplot(plot.formula, dataset = NULL, xlab = NULL, ylab = NULL, ...)
+stripboxplot(plot.formula, dataset = NULL, xlab = NULL, ylab = NULL,
+  points.col = "lightgrey", ...)
 }
 \arguments{
 \item{plot.formula}{Formula for plotting}
@@ -15,7 +16,9 @@ stripboxplot(plot.formula, dataset = NULL, xlab = NULL, ylab = NULL, ...)
 
 \item{ylab}{y-axis label}
 
-\item{...}{additional parameters to be passed to \code{stripchart}}
+\item{points.col}{Colour of background points}
+
+\item{...}{Additional parameters to be passed to \code{stripchart}}
 }
 \description{
 Make a boxplot with underlying stripplot

@@ -4,7 +4,7 @@
 \alias{km.plot}
 \title{Plot Kaplan-Meier curves.}
 \usage{
-km.plot(km.formula, dataset, show.risk.table = FALSE, lty = NULL)
+km.plot(km.formula, dataset, show.risk.table = FALSE, col = NULL, ...)
 }
 \arguments{
 \item{km.formula}{Formula to be plotted}
@@ -13,8 +13,16 @@ km.plot(km.formula, dataset, show.risk.table = FALSE, lty = NULL)
 
 \item{show.risk.table}{Boolean indicating whether to show at risk data}
 
-\item{lty}{Line type}
+\item{col}{Line colour}
+
+\item{...}{Other parameters to be passed to \code{plot.survfit}}
+}
+\value{
+None
 }
 \description{
 Plot Kaplan-Meier curves.
+}
+\author{
+Erle Holgersen <Erle.Holgersen@icr.ac.uk>
 }
