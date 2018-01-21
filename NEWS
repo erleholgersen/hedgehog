@@ -1,6 +1,6 @@
 hedgehog v0.1.4                         2018-01-21
 ==================================================
-- added read.header function
+- added read.header and parse.tcga.id functions
 
 hedgehog v0.1.3                         2018-01-17
 ==================================================
