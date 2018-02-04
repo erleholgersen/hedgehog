@@ -4,7 +4,7 @@
 \alias{datestamp.filename}
 \title{Generate date-stamped filename}
 \usage{
-datestamp.filename(file.name, extension, timestamp = FALSE)
+datestamp.filename(file.name, extension = "", timestamp = FALSE)
 }
 \arguments{
 \item{file.name}{core part of file name to be date stamped}

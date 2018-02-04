@@ -1,3 +1,8 @@
+hedgehog v0.1.5                         2018-02-03
+==================================================
+- made extension optional argument in 
+  datestamp.filename
+
 hedgehog v0.1.4                         2018-01-21
 ==================================================
 - added read.header and parse.tcga.id functions

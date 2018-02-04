@@ -6,7 +6,7 @@
 #' @return generated file name
 #'
 #' @export datestamp.filename
-datestamp.filename <- function(file.name, extension, timestamp = FALSE) {
+datestamp.filename <- function(file.name, extension = '', timestamp = FALSE) {
     
     # get stamp 
     if (timestamp) {
@@ -26,10 +26,12 @@ datestamp.filename <- function(file.name, extension, timestamp = FALSE) {
     stamped.file.name <- paste0(
       stamp, 
       '_',
-      file.name,
-      '.',
-      extension
+      file.name
     );
+    
+    if( !is.null(extension) && '' != extension ) {
+        stamped.file.name <- paste0(stamped.file.name, '.', extension);
+    }
     
     return(stamped.file.name);
 }
