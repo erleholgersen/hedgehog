@@ -1,10 +1,18 @@
 #' Generate date-stamped filename
 #'
 #' @param file.name core part of file name to be date stamped
-#' @param extension extension
+#' @param extension optional extension
+#' @param timestamp logical indicating whether to also add a timestamp
 #'
 #' @return generated file name
+#' 
+#' @author 
+#' Erle Holgersen <Erle.Holgersen@gmail.com>
 #'
+#' @examples 
+#' datestamp.filename('plot.png');
+#' datestamp.filename('a_table', extension = 'txt');
+#' datestamp.filename('plot.png', timestamp = TRUE);
 #' @export datestamp.filename
 datestamp.filename <- function(file.name, extension = '', timestamp = FALSE) {
     
@@ -35,3 +43,9 @@ datestamp.filename <- function(file.name, extension = '', timestamp = FALSE) {
     
     return(stamped.file.name);
 }
+
+
+#' @rdname datestamp.filename
+#'
+#' @export date.stamp.file.name
+date.stamp.file.name <- datestamp.filename;
