@@ -1,6 +1,10 @@
+hedgehog v0.1.6                         2018-02-11
+==================================================
+- added is.error function 
+
 hedgehog v0.1.5                         2018-02-03
 ==================================================
-- made extension optional argument in 
+- made extension argument optional in 
   datestamp.filename
 
 hedgehog v0.1.4                         2018-01-21
