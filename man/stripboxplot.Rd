@@ -23,3 +23,15 @@ stripboxplot(plot.formula, dataset = NULL, xlab = NULL, ylab = NULL,
 \description{
 Make a boxplot with underlying stripplot
 }
+\examples{
+test.data <- data.frame(
+ x = sample(letters[1:3], 50, replace = TRUE),
+ y = rnorm(50)
+ );
+
+stripboxplot(y ~ x, test.data);
+
+}
+\author{
+Erle Holgersen <Erle.Holgersen@gmail.com>
+}

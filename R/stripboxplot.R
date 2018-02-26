@@ -10,6 +10,17 @@
 #' @param points.col Colour of background points
 #' @param ... Additional parameters to be passed to \code{stripchart}
 #' 
+#' @author Erle Holgersen <Erle.Holgersen@gmail.com>
+#' 
+#' 
+#' @examples
+#' test.data <- data.frame(
+#'  x = sample(letters[1:3], 50, replace = TRUE),
+#'  y = rnorm(50)
+#'  );
+#' 
+#' stripboxplot(y ~ x, test.data);
+#' 
 #' @export stripboxplot
 stripboxplot <- function(
     plot.formula, 
@@ -38,7 +49,9 @@ stripboxplot <- function(
         dataset,
         add = TRUE,
         col = 'transparent',
-        outline = FALSE
+        outline = FALSE,
+        xaxt = 'n',
+        yaxt = 'n'
         );
     
 }

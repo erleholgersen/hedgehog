@@ -64,6 +64,14 @@ stripboxplot(
     );
 ```
 
+There are a number of arguments for tweaking the plot appearance. To change the category labels, use the `group.names` argument.
 
-
+```{r}
+stripboxplot(
+    y ~ x, 
+    test.data,
+    points.col = c('darkgreen', 'orange', 'firebrick'),
+    group.names = c('Y', 'A', 'Y')
+    );
+```
 

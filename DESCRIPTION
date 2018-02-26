@@ -1,8 +1,8 @@
 Package: hedgehog
 Type: Package
 Title: R functions for personal use.
-Version: 0.1.6
-Date: 2018-02-11
+Version: 0.1.7
+Date: 2018-02-26
 Author: Erle Holgersen <erle.holgersen@gmail.com>
 Maintainer: Erle Holgersen <erle.holgersen@gmail.com>
 Description: Various R functions developed for personal convenience.
