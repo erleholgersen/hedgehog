@@ -1,3 +1,7 @@
+hedgehog v0.1.7                         2018-03-11
+==================================================
+- added convert.time.numeric function
+
 hedgehog v0.1.7                         2018-02-26
 ==================================================
 - fixed group.names behaviour in stripboxplot
