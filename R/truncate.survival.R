@@ -33,7 +33,7 @@ truncate.survival <- function(t, survival.object, censoring.status = 0) {
   truncated.survival.status[survival.data[, 'time'] <= t] <- survival.data[ survival.data[, 'time'] <= t, 'status'];
     
   # make new survival object
-  truncated.survival.object <- Surv(
+  truncated.survival.object <- survival::Surv(
     truncated.survival.time, 
     truncated.survival.status
     );

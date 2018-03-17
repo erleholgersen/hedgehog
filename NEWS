@@ -1,4 +1,9 @@
-hedgehog v0.1.7                         2018-03-11
+hedgehog v0.1.9                         2018-03-17
+==================================================
+- new show.colour.palette function
+- moved survival package to Imports
+
+hedgehog v0.1.8                         2018-03-11
 ==================================================
 - added convert.time.numeric function
 

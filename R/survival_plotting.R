@@ -22,7 +22,7 @@ km.plot <- function(
   # TO DO: check input
   
   # fit KM curves
-  km.fit <- survfit(
+  km.fit <- survival::survfit(
     km.formula,
     dataset
     );

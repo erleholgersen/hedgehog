@@ -1,16 +1,17 @@
 Package: hedgehog
 Type: Package
 Title: R functions for personal use.
-Version: 0.1.8
-Date: 2018-03-11
+Version: 0.1.9
+Date: 2018-03-17
 Author: Erle Holgersen <erle.holgersen@gmail.com>
 Maintainer: Erle Holgersen <erle.holgersen@gmail.com>
 Description: Various R functions developed for personal convenience.
-Depends: survival
 License: What license is it under?
 LazyData: TRUE
 RoxygenNote: 6.0.1
+Imports: grid, survival
 Suggests: testthat,
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+

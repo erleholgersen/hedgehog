@@ -75,3 +75,18 @@ stripboxplot(
     );
 ```
 
+# Colour palettes
+
+The function `get.colour.palette` contains a few pre-made colour palettes. To quickly look at what colours are included in a palette, run `show.colour.palette`.
+
+```{r, fig.width = 5}
+show.colour.palette( get.colour.palette(7) );
+```
+
+The visualization function also works with other colour palettes.
+
+```{r, fig.width = 5}
+show.colour.palette( colours(7) );
+```
+
+

@@ -26,14 +26,14 @@ censoring.km.estimate <- function(t, survival.object, censoring.status = 0) {
     survival.data <- as.matrix(survival.object);
     
     # create surv object with censoring as event
-    censoring.surv.object <- Surv(
+    censoring.surv.object <- survival::Surv(
         survival.data[, 'time'], 
         censoring.status == survival.data[, 'status']
     );
     
     # fit non-parametric estimate
     # if adding covariates, this needs to change!
-    censoring.km.fit <- survfit(
+    censoring.km.fit <- survival::survfit(
         censoring.surv.object ~ 1
     );
     
