@@ -5,4 +5,4 @@ An R package of functions for personal use, inspired by [Hilary Parker's blogpos
 
 At present, the package includes functions (in various states of completeness) for Monte Carlo integration, survival analysis, processing TCGA datasets, and generic helper functions.
 
-For a better idea of what the package can do, check out the [plotting vignette](https://github.com/erleholgersen/hedgehog/blob/master/vignettes/Plotting.Rmd).
+For a better idea of what the package can do, check out the [plotting vignette](https://github.com/erleholgersen/hedgehog/blob/master/vignettes/Plotting.md).

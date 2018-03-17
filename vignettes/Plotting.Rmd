@@ -2,7 +2,9 @@
 title: "Plotting"
 author: "Erle Holgersen"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
+output:   
+    html_document:
+        keep_md: true
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}
