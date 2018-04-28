@@ -14,14 +14,14 @@ fg.model.ipcw <- function(t, survival.object, censoring.status = 0) {
     
     survival.data <- as.matrix(survival.object);
     
-    ### INPUT CHECKS ############################################################
+    ### INPUT CHECKS ##########################################################
     
     if( !( is.numeric(t) && t > 0 ) ) {
         stop('t must be a positive number.');
     }
     
     
-    ### CALCULATE WEIGHTS #######################################################
+    ### CALCULATE WEIGHTS #####################################################
     
     # Get r(t), indicator of knowledge of vital status of patient at time t
     r <- vital.status.known(t, survival.object);

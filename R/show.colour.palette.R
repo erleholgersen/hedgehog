@@ -39,7 +39,7 @@ show.colour.palette <- function(colours) {
     # draw rectangles
     grid::grid.newpage();
     
-    for( i in 1:length(colours) ) {
+    for( i in seq_along(colours) ) {
         grid::grid.rect(
             x = coordinate.grid[i, 1], 
             y = coordinate.grid[i, 2], 

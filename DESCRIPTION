@@ -1,12 +1,12 @@
 Package: hedgehog
 Type: Package
-Title: R functions for personal use.
-Version: 0.1.9
-Date: 2018-03-17
+Title: R functions for personal use
+Version: 0.1.10
+Date: 2018-04-28
 Author: Erle Holgersen <erle.holgersen@gmail.com>
 Maintainer: Erle Holgersen <erle.holgersen@gmail.com>
 Description: Various R functions developed for personal convenience.
-License: What license is it under?
+License: GPL-2
 LazyData: TRUE
 RoxygenNote: 6.0.1
 Imports: grid, survival

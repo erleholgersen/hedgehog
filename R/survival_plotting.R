@@ -34,19 +34,25 @@ km.plot <- function(
   
   strata.labels <- unique(summary(km.fit)$strata);
   
-  strata.widths <- sapply(
+  strata.widths <- vapply(
      as.character(strata.labels),
-     strwidth, 
-     units = 'inches'
+     FUN = graphics::strwidth, 
+     units = 'inches',
+     FUN.VALUE = 0
      );
   
   # set margins
   mai <- c(1, 0.5, 0.82, 0.42);
   if(show.risk.table) {
-      mai <- c(0.8 + 0.2*length(strata.labels), 0.4 + 1.1*max(strata.widths), 0.82, 0.42);
+      mai <- c(
+          0.8 + 0.2*length(strata.labels), 
+          0.4 + 1.1*max(strata.widths), 
+          0.82, 
+          0.42
+          );
   }
   
-  par(
+  graphics::par(
       mai = mai
       );
   
@@ -54,7 +60,7 @@ km.plot <- function(
       col <- get.colour.palette( length(strata.labels) );
   }
   
-  plot(
+  graphics::plot(
       km.fit, 
       col = col,
       mark.time = TRUE,
@@ -75,7 +81,7 @@ km.plot <- function(
     
     n.risk <- split(risk.data$n.risk, risk.data$strata);
     
-    for(i in 1:length(n.risk) ) {
+    for(i in seq_along(n.risk) ) {
         strata <- names(n.risk)[i];
 
         # pad with zeroes at the end
@@ -84,7 +90,7 @@ km.plot <- function(
             rep(0, length(risk.times) - length(n.risk[[ i ]] ))
             );
     
-        mtext(
+        graphics::mtext(
             strata,
             side = 1,
             at = -0.2*risk.times[2],
@@ -93,12 +99,12 @@ km.plot <- function(
             font = 2,
             );
         
-        mtext(
+        graphics::mtext(
             strata.risk,
             side = 1,
             at = risk.times,
             line = 2 + i
-        );
+            );
         
         } # end strata loop
     
@@ -106,13 +112,13 @@ km.plot <- function(
   
   if( length(strata.labels) > 1 ) {
       
-      legend(
+      graphics::legend(
           'bottomleft',
           legend = strata.labels,
           col = col,
           lty = 1,
           bty = 'n'
-      );
+          );
   }
   
 }

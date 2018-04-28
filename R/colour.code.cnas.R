@@ -11,7 +11,12 @@
 #' @return vector of colours
 #' 
 #' @export colour.code.cnas
-colour.code.cnas <- function(cna.calls, loss.col = 'blue', gain.col = 'red', neutral.col = 'white') {
+colour.code.cnas <- function(
+    cna.calls, 
+    loss.col = 'blue', 
+    gain.col = 'red', 
+    neutral.col = 'white'
+    ) {
    
     colour.dictionary <- c(
         '-1' = loss.col,
