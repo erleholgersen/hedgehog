@@ -2,7 +2,7 @@
 % Please edit documentation in R/monte_carlo.R
 \name{geometric.mean}
 \alias{geometric.mean}
-\title{Calculate geometric mean}
+\title{geometric.mean}
 \usage{
 geometric.mean(x)
 }

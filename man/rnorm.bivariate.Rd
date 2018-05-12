@@ -2,7 +2,7 @@
 % Please edit documentation in R/monte_carlo.R
 \name{rnorm.bivariate}
 \alias{rnorm.bivariate}
-\title{Generate samples from a bivariate normal distribution based on correlation}
+\title{rnorm.bivariate}
 \usage{
 rnorm.bivariate(n, rho)
 }

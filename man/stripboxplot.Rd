@@ -5,7 +5,7 @@
 \title{stripboxplot}
 \usage{
 stripboxplot(plot.formula, dataset = NULL, xlab = NULL, ylab = NULL,
-  points.col = "lightgrey", ...)
+  frame = FALSE, points.col = "lightgrey", ...)
 }
 \arguments{
 \item{plot.formula}{Formula for plotting}
@@ -15,6 +15,8 @@ stripboxplot(plot.formula, dataset = NULL, xlab = NULL, ylab = NULL,
 \item{xlab}{x-axis label}
 
 \item{ylab}{y-axis label}
+
+\item{frame}{logical indicating whether to plot full frame}
 
 \item{points.col}{Colour of background points}
 

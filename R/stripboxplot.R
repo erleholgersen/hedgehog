@@ -8,6 +8,8 @@
 #' @param xlab x-axis label
 #' @param ylab y-axis label
 #' @param points.col Colour of background points
+#' @param frame logical indicating whether to plot full frame
+#' 
 #' @param ... Additional parameters to be passed to \code{stripchart}
 #' 
 #' @author Erle Holgersen <Erle.Holgersen@gmail.com>
@@ -27,6 +29,7 @@ stripboxplot <- function(
     dataset = NULL,
     xlab = NULL,
     ylab = NULL,
+    frame = FALSE,
     points.col = 'lightgrey',
     ...
     ) {
@@ -41,6 +44,7 @@ stripboxplot <- function(
         pch = 19,
         xlab = xlab,
         ylab = ylab,
+        frame = frame,
         ...
         );
     
@@ -51,7 +55,8 @@ stripboxplot <- function(
         col = 'transparent',
         outline = FALSE,
         xaxt = 'n',
-        yaxt = 'n'
+        yaxt = 'n',
+        frame = frame
         );
     
 }

@@ -1,3 +1,7 @@
+hedgehog v0.1.11                        2018-05-12
+==================================================
+- added frame parameter to stripboxplot
+
 hedgehog v0.1.9                         2018-03-17
 ==================================================
 - new show.colour.palette function
