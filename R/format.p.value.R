@@ -16,7 +16,7 @@ format.p.value <- function(p.value, prefix = 'P') {
     } else if( p.value < 0.001) {
         p.expression <- bquote( .(prefix) == .( scientific.notation( p.value) ) );
     } else {
-        p.expression <- bquote( .(prefix) == .(p.value) );
+        p.expression <- bquote( .(prefix) == .( round(p.value, 3)) );
     }
     
     return(p.expression);
