@@ -1,8 +1,9 @@
 #' Generate date-stamped filename
 #'
-#' @param file.name core part of file name to be date stamped
+#' @param ... core part of file name to be date stamped. If more than one part, ill be combined with \code{sep}
 #' @param extension optional extension
 #' @param timestamp logical indicating whether to also add a timestamp
+#' @param sep separator between components of file name
 #'
 #' @return generated file name
 #' 
@@ -14,8 +15,10 @@
 #' datestamp.filename('a_table', extension = 'txt');
 #' datestamp.filename('plot.png', timestamp = TRUE);
 #' @export datestamp.filename
-datestamp.filename <- function(file.name, extension = '', timestamp = FALSE) {
+datestamp.filename <- function(..., extension = '', timestamp = FALSE, sep = '_') {
     
+    file_name = paste(c(...), collapse = sep)
+
     # get stamp 
     if (timestamp) {
         
@@ -31,17 +34,13 @@ datestamp.filename <- function(file.name, extension = '', timestamp = FALSE) {
     }
 
     # merge components
-    stamped.file.name <- paste0(
-      stamp, 
-      '_',
-      file.name
-    );
+    stamped_file_name <- paste0(stamp, '_', file_name);
     
     if( !is.null(extension) && '' != extension ) {
-        stamped.file.name <- paste0(stamped.file.name, '.', extension);
+        stamped_file_name <- paste0(stamped_file_name, '.', extension);
     }
     
-    return(stamped.file.name);
+    return(stamped_file_name);
 }
 
 

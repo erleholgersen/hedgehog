@@ -1,3 +1,7 @@
+hedgehog v0.1.15                        2019-05-25
+==================================================
+- date.stamp.file.name accepts file name in multiple components
+
 hedgehog v0.1.13                        2018-06-01
 ==================================================
 - format.p.value bugfix
